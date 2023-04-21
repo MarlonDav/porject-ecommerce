@@ -13,19 +13,18 @@ const Navbar = () => {
           </h2>
           <ul className= 'flex justify-center items-center gap-6 text-[#efefef] text-[18px]'>
             <li className='cursor-pointer transition-all hover:text-[#efefef6]'>Home</li>
-            <li className='cursor-pointer transition-all hover:text-[#efefef6]'>Hero</li>
             <li className='cursor-pointer transition-all hover:text-[#efefef6]'>Categories</li>
             <li className='cursor-pointer transition-all hover:text-[#efefef6]'>Featured</li>
             <li className='cursor-pointer transition-all hover:text-[#efefef6]'>Contacts</li>
           </ul>
-          <div> 
-            <div>
-              <input type="text" placeholder='Search'></input>
-              <AiOutlineSearch/>
+          <div className='flex items-center gap-6'> 
+            <div className='flex items-center gap-4 bg-white px-2 py-1 rounded-lg'>
+              <input className='text-[#222] outline-none' type="text" placeholder='Search'></input>
+              <AiOutlineSearch color='black'/>
             </div>
-            <div>
+            <div className='relative'>
               <AiOutlineShoppingCart size={30}/>
-              <span>0</span>
+              <span className='absolute -top-3 -right-4 px-2 rounded-full bg-white text-[#222] '>0</span>
             </div>
           </div>
       </div>

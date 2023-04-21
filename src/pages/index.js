@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar"
-import { Hero } from "../../components/Hero"
+import  Background from "../../components/Background"
 import Categories from "../../components/Categories"
 import FeaturedProducts from "../../components/FeaturedProducts"
 import Footer from "../../components/Footer"
@@ -15,7 +15,7 @@ export default function Home(){
           <div>
 
             <Navbar/>
-            <Hero/> 
+            <Background/> 
             <Categories/> 
             <FeaturedProducts/> 
             <Footer/>
