@@ -13,7 +13,7 @@ const Categories = () => {
     <div className='h-full w-full flex justify-center'>
       <div className='h-full w-10/12'>
         
-        <h2 className='mb-8 text-3xl text-[#333]'>Categorias</h2>
+        <h2 className='font-extrabold mb-8 text-3xl text-[#333]'>Categorias</h2>
         <div className='h-full w-full flex items-center justify-between'>
           <Link href='/category/audifonos' className="h-[325px] w-[325px] relative" > 
           <Img  src={audifonos} alt="" className="h-full w-full object-cover"/>      
