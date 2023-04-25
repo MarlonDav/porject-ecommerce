@@ -1,16 +1,20 @@
 import React from 'react'
-
-const ProductItem = () => {
+import Link from 'next/link'
+const ProductItem = ({ product }) => {
   return (
-    <div>
+ <Link href={`/products/${product.id}`} className='no-underline shadow-black shadow-lg p-5 hover:shadow-xl hover:shadow-red-500 transition-all'> 
+  <div>
       <div>
+        <img src={product.image} width={300} height={300}/>
       </div>
        <div className='flex items-center justify-center flex-col gap-2'>
-        <h3 className='text-red-500 text-2xl capitalize mt-4' >coming soon</h3>
-        <span className='text-[18px]'>coming soon</span>
-        <span className='text-[#555]'>coming soon</span>
+        <h3 className='text-red-500 text-2xl capitalize mt-4' >{product.name}</h3>
+        <span className='text-[18px]'>{product.category}</span>
+        <span className='text-[#555]'>{product.price}</span>
        </div>
     </div>
+ </Link>
+   
    
   )
 }

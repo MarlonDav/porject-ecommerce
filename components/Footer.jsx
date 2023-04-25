@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { BsFacebook, BsInstagram } from 'react-icons/bs'
+import {IoLogoWhatsapp} from 'react-icons/io'
 
 const Footer = () => {
   return (
@@ -14,9 +15,9 @@ const Footer = () => {
         </div>
         <div  className='flex flex-col gap-4'>
           <h2 className='text-2xl mb-8 text-red-600'>Contacts</h2>
-          <span>Whatsapp: +57 322 4396169</span>
-          <span><Link href='https://www.facebook.com/chepelin.technology?mibextid=ZbWKwL'> <BsFacebook/> </Link></span>
-          <span><Link href='https://instagram.com/chepelintechnology?igshid=YmMyMTA2M2Y='> <BsInstagram/> </Link></span>
+          <span><Link href='https://api.whatsapp.com/send?phone=573224396169&text='> <IoLogoWhatsapp size={50}/> </Link></span>
+          <span><Link href='https://www.facebook.com/chepelin.technology?mibextid=ZbWKwL'> <BsFacebook size={50}/> </Link></span>
+          <span><Link href='https://instagram.com/chepelintechnology?igshid=YmMyMTA2M2Y='> <BsInstagram size={50}/> </Link></span>
         </div>
         <div className='flex flex-col gap-4'>
           <h2 className='text-2xl mb-8 text-red-600'>politicas de privacidad</h2>
