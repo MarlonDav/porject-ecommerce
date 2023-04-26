@@ -2,8 +2,12 @@ import Image from 'next/image'
 
 import React from 'react'
 import {AiOutlineSearch, AiOutlineShoppingCart} from 'react-icons/ai'
+import useCartContext from '../context/cartContext'
+import Cart from './Cart'
 
 const Navbar = () => {
+  const {isCartOpen, toggleCart, cartItems} = useCartContext()
+
   return (
     <div className= 'bg-gray-400 text-[#efefef] h-[60px] w-full py-2 px-6 flex justify-center'>
       <div className='h-full w-10/12 my-auto flex justify-between items-center'>
@@ -23,8 +27,13 @@ const Navbar = () => {
               <AiOutlineSearch color='black'/>
             </div>
             <div className='relative'>
-              <AiOutlineShoppingCart size={30}/>
-              <span className='absolute -top-3 -right-4 px-2 rounded-full bg-white text-[#222] '>0</span>
+              <AiOutlineShoppingCart size={30} onClick={toggleCart}/>
+              <span className='absolute -top-3 -right-4 px-2 rounded-full bg-white text-[#222] '>
+                {cartItems?.length}
+              </span>
+              <div className='absolute top-4  -right-16 z-10'>
+                  {isCartOpen && <Cart/>} 
+              </div>
             </div>
           </div>
       </div>

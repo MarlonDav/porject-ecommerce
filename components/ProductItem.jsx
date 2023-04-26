@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 const ProductItem = ({ product }) => {
   return (
- <Link href={`/products/${product.id}`} className='no-underline shadow-black shadow-lg p-5 hover:shadow-xl hover:shadow-red-500 transition-all'> 
+ <Link href={`/products/${product._id}`} className='no-underline shadow-black shadow-lg p-5 hover:shadow-xl hover:shadow-red-500 transition-all'> 
   <div>
       <div>
         <img src={product.image} width={300} height={300}/>

@@ -7,7 +7,7 @@ import Head from "next/head"
 
 export default function Home(){
     return (
-        <main  >
+        <main  style={{backgroundImage: "url('/background1.jpg')"}}>
            <Head>
             <title>Chepelin Tecnology</title>
             </Head>

@@ -1,9 +1,9 @@
 import React from 'react'
 import ProductItem from './ProductItem'
-import useFetchHook from '@/context/useFetchHook'
+import useFetchHook from '@/hook/useFetchHook'
 
 const FeaturedProducts = () => {
-  const { data: products, loading } = useFetchHook({ endpoint: '/product/products' });
+  const { data: products, loading } = useFetchHook({ endpoint: 'product/products' });
    if(loading){
     return <p>cargando productos</p>
    }
